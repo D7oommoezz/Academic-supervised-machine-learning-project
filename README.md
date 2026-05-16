@@ -162,13 +162,3 @@ python src/train.py
 - Confusion matrix analysis
 - Basic machine learning workflow organization
 
-## Future Improvements
-
-Possible improvements include:
-
-- Hyperparameter tuning using GridSearchCV
-- Cross-validation
-- Better handling of class imbalance
-- Additional visualizations
-- Saving trained models using joblib
-- Building a small inference script or simple web demo
