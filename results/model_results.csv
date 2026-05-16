@@ -1,0 +1,5 @@
+model,accuracy,wrong_predictions,test_samples
+Random Forest,0.814,8,43
+Logistic Regression,0.7209,12,43
+SVM (RBF Kernel),0.7209,12,43
+Gaussian Naive Bayes,0.5116,21,43

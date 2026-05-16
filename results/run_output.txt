@@ -1,0 +1,92 @@
+Dataset shape: (214, 11)
+
+Class distribution:
+Type of glass
+1    70
+2    76
+3    17
+5    13
+6     9
+7    29
+Name: count, dtype: int64
+======================================================================
+Model: Gaussian Naive Bayes
+Accuracy: 51.16%
+
+Classification report:
+              precision    recall  f1-score   support
+
+           1       0.50      0.86      0.63        14
+           2       0.40      0.13      0.20        15
+           3       0.00      0.00      0.00         3
+           5       0.50      0.33      0.40         3
+           6       0.50      1.00      0.67         2
+           7       0.83      0.83      0.83         6
+
+    accuracy                           0.51        43
+   macro avg       0.46      0.53      0.46        43
+weighted avg       0.48      0.51      0.45        43
+
+======================================================================
+Model: Logistic Regression
+Accuracy: 72.09%
+
+Classification report:
+              precision    recall  f1-score   support
+
+           1       0.71      0.71      0.71        14
+           2       0.67      0.67      0.67        15
+           3       0.00      0.00      0.00         3
+           5       1.00      1.00      1.00         3
+           6       0.67      1.00      0.80         2
+           7       0.86      1.00      0.92         6
+
+    accuracy                           0.72        43
+   macro avg       0.65      0.73      0.68        43
+weighted avg       0.69      0.72      0.70        43
+
+======================================================================
+Model: SVM (RBF Kernel)
+Accuracy: 72.09%
+
+Classification report:
+              precision    recall  f1-score   support
+
+           1       0.69      0.79      0.73        14
+           2       0.69      0.73      0.71        15
+           3       0.00      0.00      0.00         3
+           5       1.00      0.67      0.80         3
+           6       0.50      0.50      0.50         2
+           7       0.86      1.00      0.92         6
+
+    accuracy                           0.72        43
+   macro avg       0.62      0.61      0.61        43
+weighted avg       0.68      0.72      0.69        43
+
+======================================================================
+Model: Random Forest
+Accuracy: 81.40%
+
+Classification report:
+              precision    recall  f1-score   support
+
+           1       0.75      0.86      0.80        14
+           2       0.79      0.73      0.76        15
+           3       1.00      0.67      0.80         3
+           5       1.00      1.00      1.00         3
+           6       0.67      1.00      0.80         2
+           7       1.00      0.83      0.91         6
+
+    accuracy                           0.81        43
+   macro avg       0.87      0.85      0.84        43
+weighted avg       0.83      0.81      0.81        43
+
+======================================================================
+Model comparison:
+               model  accuracy  wrong_predictions  test_samples
+       Random Forest    0.8140                  8            43
+ Logistic Regression    0.7209                 12            43
+    SVM (RBF Kernel)    0.7209                 12            43
+Gaussian Naive Bayes    0.5116                 21            43
+
+Best model: Random Forest (81.40%)
